@@ -4,10 +4,11 @@ var contexto = canvas.getContext( '2d');
 var canvaRect = canvas.getBoundingClientRect()
 var coordernadas = [0, 0], pintura = 'black', grosor= 1, draw = false;
 
+contexto.save();
 
 document.getElementById('btnClean').addEventListener("click", function(e){
-    contexto.restore();
-
+    contexto.beginPath();
+    contexto.clearRect(0,0,1000,500)
 })
 
 function setColor(e){
