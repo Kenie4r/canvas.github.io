@@ -4,9 +4,17 @@ var contexto = canvas.getContext( '2d');
 var canvaRect = canvas.getBoundingClientRect()
 var coordernadas = [0, 0], pintura = 'black', grosor= 1, draw = false;
 
+
+document.getElementById('btnClean').addEventListener("click", function(e){
+    contexto.restore();
+
+})
+
+
+
 console.log("ctx", contexto)
 
-document.addEventListener("mousedown", function(e){
+canvas.addEventListener("mousedown", function(e){
     coordernadas[0] = e.clientX - canvaRect.left;
     coordernadas[1] = e.clientY - canvaRect.top;
     draw = true;
