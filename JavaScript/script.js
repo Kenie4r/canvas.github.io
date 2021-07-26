@@ -8,7 +8,7 @@ contexto.save();
 
 document.getElementById('btnClean').addEventListener("click", function(e){
     contexto.beginPath();
-    contexto.clearRect(0,0,1000,500)
+    contexto.clearRect(0,0,1000,600)
 })
 
 function setColor(e){
