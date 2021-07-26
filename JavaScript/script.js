@@ -10,6 +10,13 @@ document.getElementById('btnClean').addEventListener("click", function(e){
 
 })
 
+function setColor(e){
+ pintura = e;
+}
+function setGrosor(g){
+    grosor =g;
+}
+
 
 
 console.log("ctx", contexto)
