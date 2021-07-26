@@ -28,7 +28,7 @@ canvas.addEventListener("mousedown", function(e){
     draw = true;
 
 })
-document.addEventListener("mousemove", function(e){
+canvas.addEventListener("mousemove", function(e){
     if(draw === true){
         dibujar(coordernadas[0], coordernadas[1],  e.clientX - canvaRect.left, e.clientY - canvaRect.top );
         coordernadas[0] = e.clientX - canvaRect.left;
@@ -36,7 +36,7 @@ document.addEventListener("mousemove", function(e){
     }
 })
 
-document.addEventListener("mouseup", function(e){
+canvas.addEventListener("mouseup", function(e){
     if(draw === true){
         dibujar(coordernadas[0], coordernadas[1],  e.clientX - canvaRect.left, e.clientY - canvaRect.top );
         coordernadas[0] = e.clientX - canvaRect.left;
@@ -55,3 +55,4 @@ function dibujar(x1, y1, x2, y2){
     contexto.stroke();
     contexto.closePath();
 }
+

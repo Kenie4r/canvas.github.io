@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dibujemos</title>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/icons/style.css">
     <link rel="stylesheet" href="boostrap/bootstrap-4.6.0-dist/css/bootstrap.css" media="">
 </head>
 <body>
@@ -24,32 +25,44 @@
         </div>
         </nav>
     </head>
+    <div class="container-fluid p-2">
 
-        <div class="container-fluid text-center">
-            <h1>Dibujemos</h1>
-            <p class="text-justify"> 
-                Acontinuación encontraras un pequeño lugar en este sito web donde podras dibujar
-                esto gracias a la ayuda de JS y el elemento de Canvas en HTML, 
+            <div class="d-flex flex-row display-4 justify-content-center text-primary m-3">
+                <span class="icon-pencil"></span>
+                <p>Dibujemos</p>
+            </div>
+            <p class="text-justify px-5"> 
+                Canvas es una de las herramientas más utlies para el diseño web debido a que
+                estos ayudan a la creaciones de imagenes o gráficos de manera sencilla sin tener 
+                que complicarse de diferentes maneras, ya sea con el css o SVG, en este caso hemos
+                usado canvas para poder crear una herramienta simple usando solo dos cosas, Canvas y 
+                también JavaScript, a está aplicación le hemos llamado <b>Dibujemos</b>, en la cual
+                puedes dibujar lo que tu quieras en este sitio web.
             </p>
+
         </div>  
 
-    <div class="container mt-2 border-dark border ">
-        <div>
-            <canvas id="canvas-paint" class="border border-dark mx-auto block" width="1000" height="500">
+    <div class="container mt-2  d-flex p-0 ">
+        <div class="p-0 flex-row justify-content-center align-self-center">
+            <canvas id="canvas-paint" class="border border-dark mx-auto block" width="1000" height="600">
             </canvas>
         </div>
-        <div>
-                <input type="color" name="" id="colors" oninput="setColor(this.value);">
-                <input type="range" name="" id="" value="1" max="5" min="1" oninput="setGrosor(this.value);">
-                <button id="btnClean"><span>Limpiar</span></button>
+        <div class="border border-dark" >
+                <input type="color" name="" id="colors" oninput="setColor(this.value);" class="input">
+                <input type="range" name=""class="vertical" value="1" max="5" min="1" oninput="setGrosor(this.value);">
+                <button id="btnClean" class="input">
+                  <span class="icon-file-empty"></span>
+                </button>
         </div>
 
     </div>
 
+    </div>
 
+    <footer class="text-center display-4 bg-dark text-light p-2 mt-2">
+        @DELTASOFTWARE
+    </footer>
 
-
-
-    <script src="JavaScript/script.js"></script>
+   <script src="JavaScript/script.js"></script>
 </body>
 </html>

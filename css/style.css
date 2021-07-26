@@ -1,0 +1,15 @@
+input[type= range]{
+    appearance: slider-vertical;
+    -webkit-appearance: slider-vertical;
+}
+::-webkit-slider-runnable-track{
+    background-color:rgb(104, 194, 253);
+    width: fit-content;
+    border-radius: 20px;
+}
+.input{
+    width: 60%;
+    height: 7%;
+    display: block;
+    margin: auto;
+}
