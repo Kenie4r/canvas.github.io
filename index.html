@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Aprende Canvas!</title>
+    <link rel="icon" href="icons/img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
     <!--Conexiones de las hojas de estilos de boostrap-->
     <link rel="stylesheet" href="boostrap/bootstrap-4.6.0-dist/css/bootstrap.css">
 </head>
@@ -18,20 +20,90 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" href="#">Inicio</a>
-            <a class="nav-link" href="">Saber más</a>
+            <a class="nav-link" target="_blank" href="https://www.w3schools.com/tags/ref_canvas.asp">Saber más</a>
             <a class="nav-link" href="dibujemos.html">Dibujemos</a>
           </div>
         </div>
       </nav>
-      <div>
+      <div class="container-fluid border border-dark bg-primary d-flex flex-column justify-content-center p-0  aling-items-center" id="height-60" >
+        <div class="container">
+          <img src="icons/img/icon.png" alt="" width="100px" height="100px" class="m-auto  d-block">
+          <h1 class="text-light text-center">TODO SOBRE CANVAS</h1>
+        </div>  
+      </div>
+      <div class="container-fluid  text-center p-5">
+          <h2>EL PRINCIPAL OBJETIVO DE ESTA PÁGINA</h2>
+          <p class="text-justify px-5">El objetivo de este sitio  es el conocer sobre una de las herramientas más 
+            importantes en el desarrollo web, como lo es Canvas, en la cual se puede dibujar
+          , crear imagenes y también algo muy importante como lo es gráficas, esto solo usando 
+          JavaScript y HTML, sin el uso de css debido a que este crea más complicaciones, en este
+           caso hemos  creado una pequeña aplicación en la cual podremos dibujar en este sitio web (haciendo uso de
+           Canvas y JavaScript).
+          </p>
+      </div>
+
+      <div class="container-fluid p-5">
+        <h2 class="text-dark text-center ">¿Qué es Canvas?</h2>
+        <p class="p-5">
+          La definición de la palabra canvas proviene de forma en latín la cual significa
+          lienzo; En HTML  este no pierde el significado, siendo un lienzo donde se puede
+          dibujar o pintar lo que los diseñasdores quierán, para el uso de este es necesario 
+          el uso de scripts, los cuales se refieren al uso de JS, para poder dibujar en estos 
+          lienzos
+        </p>
 
       </div>
 
+      <div class="container-fluid myGrid p-1">
+        <h2 class="text-center col-span-2">Iniciemos a dibujar</h2>
+        <div class="p-5 col-span-2">
+          <p class="px-2">
+              Antes de inciar debemos entender que el diseño de los objetos como canvas 
+              no pueden ser responsive, esto debido a que es necesario tener ya implementado
+              las medidas para poder hacer uso de este objeto, además de como se meciono anteriormente
+              este hace uso de JS para poder dibujar lo que hay dentro, para ello siempre debemos añadir
+              la siguientes lineas de codigo, donde vamos a definir las variables del objeto canva y su contexto
+              el cual ayuda a implemetar los dibujos que podremos hacer con diferentes funciones
+          </p>
+          <div >
+            <p>
+              Como podemos ver tenemos en nuestra consola todos los atributos que nos puede llegar a 
+              ofrecer la API de Canvas, desde las propiedades de fuentesm, hasta sus funciones las cuales se encuentran en la parte 
+              de <i>[[Prototype]]</i>, en este caso la ofreciendonos las funciones de '2d'
+            </p>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
 
-
+          <div class=" p-2 pl-4  bg-dark m-auto">
+            <code class=" text-light display-5 ">
+              <p> //Primero definimos una variable en la cual podremos seleccionar al elemento canva</p>
+              <p>
+                var canvas = document.querySelector('canvas');
+              </p>
+              <p>//Luego de seleccionar nuestro objeto canvas podremos hacer uso de este, pero para dibujar debemos obtener el contexto</p>
+              <p>
+                var ctx = canvas.getContext('2d'); //aquí podremos escoger entre '2d' o 3d para poder tener nuestro canvas,
+              </p>
+              <p>
+                //luego de Esto podremos comenzar a dibujar con nuestras funciones obtenidas en ctx
+              </p>
+              <p>//Si colocamos en nuestra consola podremos tener todas las funciones que este nos entrega</p>
+              <p>
+                console.log('context: ', ctx);
+              </p>
+            </code>
+          </div>
+        </div>
+        
+        <div>
+          <img src="icons/img/propieretys.PNG" alt="propiedades de ctx" class="mx-auto d-block">
+        </div>
+  
+      </div>
 
         <!--   SCRIPTS DE JS-->
-        <script src="boostrap/bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+        <script src="JavaScript/draw-icon.js"></script>
     </head>
 </body>
 </html>

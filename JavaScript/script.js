@@ -56,3 +56,7 @@ function dibujar(x1, y1, x2, y2){
     contexto.closePath();
 }
 
+
+
+
+//dibujar icono de inicio

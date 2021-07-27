@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dibujemos</title>
+    <link rel="shortcut icon" href="icons/img/icon.png" type="">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="icons/icons/style.css">
     <link rel="stylesheet" href="boostrap/bootstrap-4.6.0-dist/css/bootstrap.css" media="">
@@ -18,8 +19,8 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
            <div class="navbar-nav">
-             <a class="nav-link  " href="#">Inicio</a>
-             <a class="nav-link " href="#">Saber más</a>
+             <a class="nav-link  " href="index.html">Inicio</a>
+             <a class="nav-link " target="_blank" href="https://www.w3schools.com/tags/ref_canvas.asp">Saber más</a>
              <a class="nav-link active" href="#">Dibujemos</a>
             </div>
         </div>
@@ -47,21 +48,26 @@
             <canvas id="canvas-paint" class="border border-dark mx-auto block" width="1000" height="600">
             </canvas>
         </div>
-        <div class="border border-dark" >
+        <div class="border border-dark" id="toolbar" >
                 <input type="color" name="" id="colors" oninput="setColor(this.value);" class="input">
                 <input type="range" name=""class="vertical" value="1" max="5" min="1" oninput="setGrosor(this.value);">
                 <button id="btnClean" class="input">
                   <span class="icon-file-empty"></span>
                 </button>
         </div>
-
+        <div class="bloqueo bg-primary text-center">
+            <h1>POR FAVOR PONGA DE LADO SU CELULAR</h1>
+    </div>
     </div>
 
     </div>
 
-    <footer class="text-center display-4 bg-dark text-light p-2 mt-2">
+    <footer class="text-center display-5 bg-dark text-light p-2 mt-2">
         @DELTASOFTWARE
     </footer>
+
+
+
 
    <script src="JavaScript/script.js"></script>
 </body>
